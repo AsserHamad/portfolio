@@ -1,0 +1,41 @@
+@import '../../../scss/variables';
+
+.contact-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+    }
+
+    .contact-details {
+        > div {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+
+            span:nth-of-type(1) {
+                font-size: 1.5em;
+            }
+            span:nth-of-type(2) {
+                font-size: 0.8em;
+                width: 80%;
+            }
+        }
+    }
+
+    .contact-button-list {
+        padding: 4vh 0;
+    }
+
+    .contact-form {
+        > div {
+
+        }
+    }
+}
