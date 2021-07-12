@@ -14,15 +14,16 @@
     }
 
     .contact-details {
+        width: 60%;
         > div {
             display: flex;
             flex-direction: column;
             text-align: left;
 
-            span:nth-of-type(1) {
+            .contact-title {
                 font-size: 1.5em;
             }
-            span:nth-of-type(2) {
+            .contact-subtitle {
                 font-size: 0.8em;
                 width: 80%;
             }
@@ -34,8 +35,79 @@
     }
 
     .contact-form {
-        > div {
+        width: 40%;
+        padding: 7vh 10vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .contact-card {
+        border-radius: 10px;
+        background-color: white;
+        color: black;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
+        >form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2vh 0;
         }
+
+        .contact-form-button {
+            padding: 2vh 4vw;
+            margin-top: 4vh;
+            width: 85%;
+            border-radius: 4px;
+            text-align: center;
+            background-color: $secondary;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition-duration: 0.2s;
+        }
+        .contact-form-button:hover{
+            background-color: lighten($color: $secondary, $amount: 5);
+        }
+    }
+}
+
+.contact-card-input-container {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 85%;
+    >span {
+        font-size: 0.9em;
+        margin-bottom: 1vh;
+    }
+    .contact-input {
+        height: 6vh;
+        background-color: #F7F7F7;
+        box-shadow: inset 0 3px 13px rgba(0,0,0,0.16);
+        border: none;
+        border-radius: 9px;
+        font-size: 1.1em;
+        padding: 0 1vw;
+        transition-duration: 0.2s;
+        border: 1px solid transparent;
+        outline: none;
+        margin-bottom: 2vh;
+    }
+    textarea.contact-input{
+        height: 25vh;
+        padding: 1vh 1vw;
+        resize: none;
+    }
+
+    .contact-input:focus {
+        border: 1px solid $secondary;
     }
 }

@@ -1,0 +1,28 @@
+@import '../../../../scss/variables';
+
+.contact-button {
+    width: 70%;
+    font-size: 0.8em;
+    padding: 2.5vh 1vw;
+    transition-duration: 0.2s;
+    border: 2px solid transparent;
+    border-radius: 7px;
+    margin-bottom: 3vh;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+
+    > img {
+        width: 2vw;
+        object-fit: contain;
+        margin-right: 2vw;
+    }
+
+    > span {
+        font-size: 1em;
+    }
+}
+
+.contact-button:hover {
+    border: 2px solid $secondary;
+}
