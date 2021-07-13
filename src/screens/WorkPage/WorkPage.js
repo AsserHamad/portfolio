@@ -11,7 +11,7 @@ const WorkPage = ({color, icon, title, images, titles, paragraphs}) => {
             <div className="work-main">
                 <div className="work-main-left">
                     <span className="work-main-left-title">{title}</span>
-                    <Carousel showStatus={false} emulateTouch>
+                    <Carousel showStatus={false} emulateTouch width={100}>
                         {images.map(image => (
                             <img alt="example" key={image} src={image} />
                         ))}

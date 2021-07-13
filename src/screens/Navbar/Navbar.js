@@ -3,7 +3,6 @@ import './Navbar.scss';
 
 const Navbar = () => {
     const history = useHistory();
-    console.log(history.location)
     return (
         <div className="navbar-container">
             <div className="navbar-logo"><span>Asser's Portfolio</span></div>
