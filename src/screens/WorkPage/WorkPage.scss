@@ -6,7 +6,7 @@
 
 .work-header {
     width: 100%;
-    height: 10vh;
+    height: 15vh;
     padding-bottom: 2vh;
     box-sizing: border-box;
     display: flex;
@@ -24,6 +24,7 @@
 
 .work-header-icon {
     width: 6vw;
+    height: 6vw;
 }
 
 .work-main {
@@ -36,7 +37,9 @@
     .thumb {border: 2px solid transparent}
     .carousel .thumb.selected, .carousel .thumb:hover {border: 2px solid $secondary !important}
     padding: 0 4vw;
-    .carousel {margin-top: 3vh}
+    .carousel {
+        margin-top: 3vh;
+    }
 }
 
 .work-main-right {
